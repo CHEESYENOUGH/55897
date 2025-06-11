@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 3404078510135334658}
   - component: {fileID: 8480199839077848563}
   m_Layer: 0
-  m_Name: Projectile
-  m_TagString: Enemy
+  m_Name: Friendly projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6875255279139105330}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.23789315, y: -0.13167086, z: 1}
+  m_LocalPosition: {x: -0.23789315, y: -0.13167086, z: 0.17431259}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123,7 +123,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: e9153529c9a636440a8154d89d577009, type: 3}
-  m_Color: {r: 1, g: 0.9795611, b: 0, a: 1}
+  m_Color: {r: 0.07075471, g: 1, b: 0.7579124, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -146,7 +146,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Enemy","value":null,"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Projectile","value":null,"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Speed","value":{"$content":6.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!114 &3404078510135334658
 MonoBehaviour:
@@ -163,7 +166,7 @@ MonoBehaviour:
   _data:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
-    - {fileID: 11400000, guid: fbf4765fb34d5504780eeb93fd5329f1, type: 2}
+    - {fileID: 11400000, guid: 8de3913661c701e469d63d1e3040c9cf, type: 2}
 --- !u!50 &8480199839077848563
 Rigidbody2D:
   serializedVersion: 4
